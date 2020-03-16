@@ -1,0 +1,58 @@
+<div class="activity-earnings-container poppinss">
+    <div class="activity-container">
+        <div class="activity-head-container">
+            <div class="activity-head">Activity</div>
+            <div class="all-activity">view all activity <ion-icon name="arrow-forward" class="right-arrow"></ion-icon>
+            </div>
+        </div>
+        <div class="recent-container">
+            <div class="recent-head">Recent</div>
+            <div class="recent-list-container" *ngFor="let activity of earningsAcctivityData.recent_activities">
+                <div class="recent-list">
+                    <img [src]="activity.user.pic_url" alt="" class="user-image">
+                    <div class="user-details">
+                        <div class="user-name">
+                            {{activity.user.name}}
+                        </div>
+                        <div class="project-details">
+                            {{activity.activity_desc}}
+                        </div>
+                        <div class="payments">
+                            <div class="eth">{{activity.project_price.eth}} ETH</div>
+                            <div class="usd">{{activity.project_price.usd}}</div>
+                        </div>
+                    </div>
+                    <div class="time-posted">1 hour ago</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="earnings-container">
+        <div class="earnings-head-container">
+            <div class="earnings-head">Top Earners</div>
+            <div class="view-all">view all <ion-icon name="arrow-forward" class="right-arrow"></ion-icon></div>
+        </div>
+        <div class="top-earners-container">
+            <div class="ranking-container">
+                <div class="ranking-head">
+                    rankings
+                </div>
+                <div class="time-period">
+                    <div class="month">month</div>
+                    <div class="all-time">all time</div>
+                </div>
+            </div>
+            <div class="earners-list-container">
+                <div class="earners-list" *ngFor = "let earners of earningsAcctivityData.top_earners">
+                    <div class="rank">{{earners.rank}}</div>
+                    <img [src]="earners.user.pic_url" alt="" class="user-image">
+                    <div class="user-details">
+                        <div class="username">{{earners.user.name}}</div>
+                        <div class="total-earnings">{{earners.total_amont}}</div>
+                    </div>
+                    <div class="horizontal-line"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

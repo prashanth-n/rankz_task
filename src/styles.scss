@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+.no-padding{
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.rubik{
+    font-family: 'Rubik', sans-serif;
+}
+.poppinss{
+    font-family: 'Poppins', sans-serif;
+}
+.roboto{
+    font-family: 'Roboto Mono', monospace;
+}
+.category-name{
+    background-color: rgba(121,130,139,0.1);
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: lowercase;
+    border-radius: 20px;
+    padding: 0.3125rem 0.75rem;
+    text-align: center;
+}
+.right-arrow{
+    color: #79828b;
+}

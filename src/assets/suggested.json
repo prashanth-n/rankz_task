@@ -1,0 +1,52 @@
+{
+    "suggested_projects": [
+        {
+            "id":1,
+            "user":{
+                "pic_url":"https://via.placeholder.com/150",
+                "name":"John Doe"
+            },
+            "proejct_details":{
+                "category":"html",
+                "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit.some test data",
+                "project_price":{
+                    "eth":1.2,
+                    "btc":0.01,
+                    "usd":"$760"
+                }
+            }
+        },
+        {
+            "id": 2,
+            "user": {
+                "pic_url": "https://via.placeholder.com/150",
+                "name": "John Doe"
+            },
+            "proejct_details": {
+                "category": "vue js",
+                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.some test data",
+                "project_price": {
+                    "eth": 1.1,
+                    "btc": 0.1,
+                    "usd": "$250"
+                }
+            }
+        },
+        {
+            "id": 3,
+            "user": {
+                "pic_url": "https://via.placeholder.com/150",
+                "name": "John Doe"
+            },
+            "proejct_details": {
+                "category": "angular",
+                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.some test data",
+                "project_price": {
+                    "eth": 10,
+                    "btc": 0.5,
+                    "usd": "$1500"
+                }
+            }
+        }
+    ]
+}

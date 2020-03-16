@@ -1,0 +1,47 @@
+<div class="main-container poppinss">
+    <div class="earnings-graph-container">
+        <div class="earnings">
+            <div class="earnings-text">earnings</div>
+            <div class="earnings-amout"> <span class="currency">{{earningsData.earnings.currency.currency_symbol}}</span><span class="amount">{{earningsData.earnings.total_earnings}}</span></div>
+            <div class="earnings-difference"> <span class="up">{{earningsData.earnings.change}} </span> <span class="week-text">since last
+                    week</span></div>
+            <div class="earnings-crypto"> {{earningsData.earnings.crypto.eth}} eth</div>
+            <div class="earnings-crypto-btc">{{earningsData.earnings.crypto.btc}} btc</div>
+        </div>
+        <div class="earnings-graph">
+            <div id="chartdiv"></div>
+        </div>
+    </div>
+    <div class="porject-rank-container">
+        <div class="project-main-container">
+            <div class="rank-container">
+                <div class="rank">Rank</div>
+                <div class="current-rank">
+                    <div class="icon">
+                        <ion-icon name="star" class="star-icon"></ion-icon>
+                    </div>
+                    <div class="rank-number">{{earningsData.earnings.rank.current}}</div>
+                </div>
+                <div class="current-rank-text">You're in top <span class="percentage-number">{{earningsData.earnings.rank.percentage}}%</span></div>
+            </div>
+            <div class="rank-container">
+                <div class="rank">Projects</div>
+                <div class="current-rank">
+                    <div class="icon">
+                        <ion-icon name="code" class="star-icon"></ion-icon>
+                    </div>
+                    <div class="rank-number">{{earningsData.earnings.projects.total}}</div>
+                </div>
+                <div class="current-rank-text"><span class="percentage-number">{{earningsData.earnings.projects.current}}</span> in this month</div>
+            </div>
+        </div>
+        <div class="horizontal-line"></div>
+        <div class="top-categories-container">
+            <div class="top-category">Top categories</div>
+            <div class="top-category-list roboto">
+                <div class="category-name" *ngFor = "let category of earningsData.earnings.projects.categories">{{category.category_name}}</div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-suggested-projects-component></app-suggested-projects-component>

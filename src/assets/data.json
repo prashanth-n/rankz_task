@@ -1,0 +1,45 @@
+{
+    "earnings": {
+        "total_earnings": 455,
+        "change": "+42",
+        "currency": {
+            "id": 1,
+            "name": "USD",
+            "currency_symbol": "$"
+        },
+        "crypto": {
+            "btc": 0.5,
+            "eth": 0.9087
+        },
+        "graph_data": [],
+        "rank": {
+            "current": 100,
+            "percentage": 40
+        },
+        "projects": {
+            "total": 40,
+            "current": 10,
+            "categories": [
+                {
+                    "id":1,
+                    "category_name":"ruby"
+                },
+                {
+                    "id": 2,
+                    "category_name": "clojure"
+                },
+                {
+                    "id": 3,
+                    "category_name": "JS"
+                }
+            ]
+        }
+    },
+    "notifications":{
+        "unread_notifications":3
+    },
+    "user":{
+        "first_name":"John",
+        "second_name":"Doe"
+    }
+}

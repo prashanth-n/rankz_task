@@ -1,0 +1,159 @@
+.suggested-project-container{
+    margin-top: 3rem;
+    .suggested-project-head{
+        color: #42505c;
+        font-size: 1.25rem;
+        font-weight: 500;
+        letter-spacing: 0.25px;
+         @media screen and (max-width:650px){
+            margin-left: 1rem;
+        }
+    }
+    .suggested-prject-list{
+        margin-top: 1.375rem;
+        display: flex;
+        @media screen and (max-width: 650px){
+            flex-direction: column;
+        }
+        .suggested-project-card{
+            width: 21.875rem;
+            height: 280px;
+            box-shadow: 0px 4px 16px rgba(0,0,0,0.06);
+            border-radius: 5px;
+            padding: 1.5rem;
+            &:not(:first-child){
+                margin-left: 1.875rem;
+                 @media screen and (max-width: 650px){
+                    margin-left: 1rem;
+                    margin-top: 1rem;
+                }
+            }
+            .suggested-project-head{
+                display: flex;
+                align-items: center;
+                .profile-time{
+                    display:flex;
+                    flex-direction: column;
+                    margin-left: 1rem;
+                    .name{
+                        font-size: 1rem;
+                        color: #42505c;
+                        font-weight: 500;
+                    }
+                    .time-posted{
+                        color: #79828b;
+                        font-size: 0.75rem;
+                        font-weight: 400;
+                    }
+                }
+                .language{
+                    display: flex;
+                    margin: 0 0 0 auto;
+                }
+                .profile-picture{
+                    height: 48px;
+                    width: 48px;
+                    border-radius: 50%;
+                }
+            }
+            .suggested-project-desc{
+                margin-top: 1.5rem;
+                font-size: 1rem;
+                font-weight: 400;
+                color: #42505c;
+            }
+            .horizontal-line{
+                height: 1px;
+                border: solid 1px #e6ebf0;
+                margin-top: 1.5rem;
+            }
+            .rate{
+                display: flex;
+                margin-top:1.25rem;
+                .btc{
+                    font-size: 1rem;
+                    font-weight: 500;
+                    line-height: 15px;
+                    text-transform: uppercase;
+                    letter-spacing: 1.25px;
+                    background: rgba(210,134,98,0.1);
+                    height: 2rem;
+                    border-radius: 20px;
+                    text-align: center;
+                    padding-top: 0.5625rem;
+                    width:5.625rem;
+                    color: #d28e62;
+                    margin-left: 0.75rem;
+                }
+                .eth{
+                    font-size: 1rem;
+                    font-weight: 500;
+                    line-height: 15px;
+                    text-transform: uppercase;
+                    letter-spacing: 1.25px;
+                    background: rgba(98,113,210,0.1);
+                    height: 2rem;
+                    border-radius: 20px;
+                    text-align: center;
+                    padding-top: 0.5625rem;
+                    width:5.625rem;
+                    color: #6271d2;
+                }
+                .usd{
+                    display:flex;
+                    margin: 0 0 0 auto;
+                    font-weight:500;
+                    color: #79828b;
+                    font-size: 1.25rem;
+                }
+            }
+            @media screen and (max-width:650px) {
+                width: 95%;
+                margin-left: 1rem;
+            }
+        }
+    }
+    .slack-container{
+        margin-top: 2.5rem;
+        height: 150px;
+        background: linear-gradient(202deg, #8F9DF8, #92A0FF);
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        @media screen and (max-width:650px){
+            align-items: center;
+            width: 95%;
+            flex-direction: column;
+            margin-left: 1rem;
+            text-align: center;
+            height: 300px;
+        }
+        .slack-icon{
+            margin-left:2.875rem;
+            color: #fff;
+            font-size: 3.5rem;
+            @media screen and (max-width:650px){
+                margin-left: 0;
+                margin-top: 2rem;
+            }
+        }
+        .description-container{
+            margin-left: 2.25rem;
+            color: #fff;
+            @media screen and (max-width:650px){
+                margin-left: 0;
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+            .slack-head{
+                font-size: 1.5rem;
+                color: #fff;
+                font-weight: 600;
+            }
+            .slack-desc{
+                color: rgba(255,255,255,0.75);
+                font-size: 1rem;
+            }
+        }
+    }
+}

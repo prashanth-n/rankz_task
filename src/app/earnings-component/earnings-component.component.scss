@@ -1,0 +1,181 @@
+$successColor:#10c176;
+$grayFontColor: #79828b;
+.main-container{
+    display: flex;
+    @media screen and (max-width: 650px){
+        flex-direction: column;
+        width: 100%;
+    }
+    .earnings-graph-container{
+        //display:flex;
+        margin-top: 2.5rem;
+        width:70%;
+        background-color: #fff;
+        height:250px;
+        border-radius:5px;
+        box-shadow: 0px 4px 16px rgba(0,0,0,0.06);
+        display: flex;
+        @media screen and (max-width: 650px){
+            flex-direction: column;
+            width: 95%;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .earnings{
+            padding-left: 1.5625rem;
+            padding-top: 1.5625rem;
+            .earnings-text{
+                text-transform: uppercase;
+                color: $grayFontColor;
+                font-weight: 500;
+                line-height: 15px;
+                letter-spacing: 1.5px;
+                font-size: 0.875rem;
+            }
+            .earnings-amout{
+                margin-top: 1.5625rem;
+                font-size: 1.875rem;
+                font-weight: 400;
+                line-height: 45px;
+                .currency{
+                    color: $grayFontColor;
+                }
+                .amount{
+                    color: #181818;
+                }
+            }
+            .earnings-difference{
+                font-size: 0.875rem;
+                margin-top: -5px;
+                .up{
+                    color:$successColor;
+                }
+                .week-text{
+                    color:$grayFontColor ;
+                }
+            }
+            .earnings-crypto{
+                color: #6271d2;
+                font-size: 1rem;
+                font-weight: 500;
+                line-height: 15px;
+                text-transform: uppercase;
+                letter-spacing: 1.25px;
+                background: rgba(98,113,210,0.1);
+                height: 2rem;
+                border-radius: 20px;
+                text-align: center;
+                padding-top: 0.5625rem;
+                margin-top:1.5625rem ;
+                width: 7.5rem;
+            }
+            .earnings-crypto-btc{
+                margin-top: 0.625rem;
+                color: #d28e62;
+                font-size: 1rem;
+                font-weight: 500;
+                line-height: 15px;
+                text-transform: uppercase;
+                letter-spacing: 1.25px;
+                background: rgba(210,134,98,0.1);
+                height: 2rem;
+                border-radius: 20px;
+                text-align: center;
+                padding-top: 0.5625rem;
+                width:5.625rem;
+            }
+        }
+        .earnings-graph{
+            flex-grow:1;
+            #chartdiv{
+                height: 250px;
+                width: 100%;
+            }
+        }
+    }
+    .porject-rank-container{
+        width: 30%;
+        background-color: #fff;
+        margin-top: 2.5rem;
+        margin-left: 1.875rem;
+        box-shadow: 0px 4px 16px rgba(0,0,0,0.06);
+        height:250px;
+        border-radius: 5px;
+        padding-left: 1.5625rem;
+        padding-top: 1.5625rem;
+        padding-right: 1.5625rem;
+        @media screen and (max-width: 650px){
+            width: 95%;
+            margin-left: 1rem;
+        }
+        .project-main-container{
+            display: flex;
+            .rank-container{
+                flex-grow: 1;
+                .rank{
+                    text-transform: uppercase;
+                    color: $grayFontColor;
+                    font-weight: 500;
+                    line-height: 15px;
+                    letter-spacing: 1.5px;
+                    font-size: 0.875rem;
+                }
+                .current-rank{
+                    display: flex;
+                    align-items: center;
+                    margin-top: 1.25rem;
+                    .icon{
+                        height: 32px;
+                        width: 32px;
+                        background-color: #6271d2;
+                        border-radius: 50%;
+                        text-align: center;
+                    }
+                    .star-icon{
+                        color: #fff;
+                        font-size: 1.5rem;
+                        padding-top: 3px;
+                    }
+                    .rank-number{
+                        margin-left: 0.5rem;
+                        font-size: 1.875rem;
+                        font-weight: 500;
+                        color: #42505c;
+                    }
+                }
+                .current-rank-text{
+                    color: $grayFontColor;
+                    font-size: 0.875rem;
+                    font-weight: 400;
+                    .percentage-number{
+                        color:$successColor;
+                    }
+                }
+            }
+        }
+        .horizontal-line{
+            height: 1px;
+            border: solid 1px #e6ebf0;
+            margin-top: 1.125rem;
+        }
+        .top-categories-container{
+            margin-top: 1.25rem;
+            text-transform:uppercase;
+            font-size: 0.875rem;
+            letter-spacing: 1.5px;
+            font-weight: 500;
+            color: #79828b;
+            .top-category-list{
+                margin-top: 1rem;
+                display: flex;
+                .category-name{
+                    margin-left: 0.75rem;
+                    &:first-child{
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+}

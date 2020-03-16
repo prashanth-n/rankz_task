@@ -1,0 +1,121 @@
+.container-fluid{
+    .header-container{
+        background: linear-gradient(202deg, #6A79DD, #5866C3);
+        height: 240px;
+        padding-left: 10.3125rem;
+        padding-right: 10.3125rem;
+        @media screen and (max-width: 650px){
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .dash-elem{
+            display: flex;
+            padding-top: 40px;
+            align-items: center;
+            color: #fff;
+            .dash-elem-text{
+                margin-left: 15px;
+                font-size: 1.25rem;
+                flex-grow: 1;
+                @media screen and (max-width:650px){
+                    display: none;
+                }
+                .font-strong{
+                    font-weight: 500;
+                }
+                .text-with-opacity{
+                    opacity: 0.5;
+                }
+            }
+            .menu{
+                display: none;
+                @media screen and (max-width:650px){
+                    display: block;
+                }
+                .ham-menu{
+                    margin-left: 1rem;
+                    font-size: 1.5rem;
+                    margin-right: 1rem;
+                }
+            }
+            .icon{
+                @media screen and (max-width:650px){
+                    display: flex;
+                    align-items: baseline;
+                }
+            }
+        }
+        .dash-icon{
+            width: 30px;
+            height: 30px;
+            border-radius: 80% 15% 55% 50% / 55% 15% 80% 50%;
+            transform: rotate(135deg);
+            background: #fff;
+        }
+        .notification{
+            position: relative;
+            @media screen and (max-width:650px){
+                display: none;
+            }
+            .unread-notification{
+                height: 20px;
+                width: 20px;
+                border-radius: 50%;
+                background-color: #4c5ebb;
+                position: absolute;
+                top: -13px;
+                text-align: center;
+                left: 10px;
+                z-index: 1;
+                font-size: 0.75rem;
+            }
+            .notification-icon{
+                color: #fff;
+                font-size: 1.5rem;
+                position: relative;
+                vertical-align: middle;
+            }
+        }
+        .account-name{
+            margin-left: 1.5625rem;
+            font-weight: 500;
+            @media screen and (max-width:650px){
+                margin-left: auto;
+                margin-right: 1rem;
+            }
+            .more-options{
+                height: 16px;
+                width: 16px;
+                background-color: #5a6abc;
+                border-radius: 50%;
+                padding:2px ;
+                text-align: center;
+                margin-left: 1rem;
+                .down-arrow{
+                    font-size: 1rem;
+                }
+            }
+        }
+        .navigation-container{
+            margin-top:40px;
+            @media screen and (max-width:650px) {
+                display: none;
+            }
+            .nav-item{
+                font-weight: 500;
+                a{
+                    font-size: 1.125rem;
+                    line-height: 15px;
+                    letter-spacing: 0.25px;
+                    color: #fff;
+                    opacity: 0.9;
+                }
+                 &.selected{
+                    background-color: rgba(2555,255,255,.15);
+                    border-radius: 20px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}

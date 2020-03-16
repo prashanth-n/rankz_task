@@ -1,0 +1,38 @@
+<div class="suggested-project-container poppinss">
+    <div class="suggested-project-head">Suggested Projects</div>
+    <div class="suggested-prject-list">
+        <div class="suggested-project-card" *ngFor = "let project of suggestedProjects.suggested_projects">
+            <div class="suggested-project-head">
+                <img [src]="project.user.pic_url" alt="" class="profile-picture">
+                <div class="profile-time">
+                    <div class="name">{{project.user.name}}</div>
+                    <div class="time-posted">5 hours ago</div>
+                </div>
+                <div class="language category-name roboto">{{project.proejct_details.category}}</div>
+            </div>
+            <div class="suggested-project-desc">
+                {{project.proejct_details.description}}
+            </div>
+            <div class="horizontal-line"></div>
+            <div class="rate">
+                <div class="eth">{{project.proejct_details.project_price.eth}} ETH</div>
+                <div class="btc">{{project.proejct_details.project_price.btc}} BTC</div>
+                <div class="usd">{{project.proejct_details.project_price.usd}}</div>
+            </div>
+        </div>
+    </div>
+    <div class="slack-container">
+        <div class="slack-icon">
+            <ion-icon name="logo-slack"></ion-icon>
+        </div>
+        <div class="description-container">
+            <div class="slack-head">
+                Join the converstion on slack
+            </div>
+            <div class="slack-desc">
+                Stay up to date on the latest news and special programs that only take place within the slack channel.
+            </div>
+        </div>
+    </div>
+</div>
+<app-activity-component></app-activity-component>
